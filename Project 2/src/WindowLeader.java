@@ -16,7 +16,7 @@ final class WindowLeader
 	WindowLeader()
 		throws RemoteException, NotBoundException
 	{
-		super(PlayerType.LEADER, "Fixed Leader");
+		super(PlayerType.LEADER, "Moving window Leader");
 	}
 
 	@Override
@@ -38,7 +38,7 @@ final class WindowLeader
 		Record oldRecord = this.m_platformStub.query(this.m_type, p_date-1);
 	  leaderPrice[p_date-2] = oldRecord.m_leaderPrice;
 	  followerPrice[p_date-2] = oldRecord.m_followerPrice;
-		float myPrice = getPrice(p_date);
+		float myPrice = getPrice(windowSize,p_date);
 		this.m_platformStub.publishPrice(this.m_type, myPrice);
 	}
 
