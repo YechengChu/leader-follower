@@ -46,7 +46,7 @@ final class FixLeader
 		double y_sum = 0;
 		double x_sum = 0;
 		double xy_sum = 0;
-		double num = current_day - start;
+		double num = current_day - 1;
 		for(int i = 1; i < current_day; i++){
 			double x_value = leaderPrice[i-1];
 			double y_value = followerPrice[i-1];
