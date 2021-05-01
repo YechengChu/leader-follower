@@ -36,6 +36,12 @@ java -Djava.rmi.server.hostname=127.0.0.1 SimpleLeader &
 
 to run the SimpleLeader.
 
+For ml leader, first compile one of `MK1MLLeader.java`, `MK2MLLeader.java` and `MK3MLLeader.java`, then run it similar to SimpleLeader
+```
+javac MK1MLLeader.java
+java -Djava.rmi.server.hostname=127.0.0.1 MK1MLLeader &
+```
+
 And after these steps, you can play with the GUI to get some ideas of how the platform works.
 
 ## 3.Implementing your own leader class
