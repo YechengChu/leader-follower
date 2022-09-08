@@ -14,32 +14,32 @@ To run the simulation with the SimpleLeader, you need to
 
 __i)__ run
 
-```
-rmiregistry &
+```shell
+$ rmiregistry &
 ```
 
 to enable RMI registration;
 
 __ii)__ run
 
-```
-java -classpath poi-3.7-20101029.jar: -Djava.rmi.server.hostname=127.0.0.1 comp34120.ex2.Main &
+```shell
+$ java -classpath poi-3.7-20101029.jar: -Djava.rmi.server.hostname=127.0.0.1 comp34120.ex2.Main &
 ```
 
 to run the GUI of the platform;
 
 __iii)__ run
 
-```
-java -Djava.rmi.server.hostname=127.0.0.1 SimpleLeader &
+```shell
+$ java -Djava.rmi.server.hostname=127.0.0.1 SimpleLeader &
 ```
 
 to run the SimpleLeader.
 
 For ml leader, first compile one of `MK1MLLeader.java`, `MK2MLLeader.java` and `MK3MLLeader.java`, then run it similar to SimpleLeader
-```
-javac MK1MLLeader.java
-java -Djava.rmi.server.hostname=127.0.0.1 MK1MLLeader &
+```shell
+$ javac MK1MLLeader.java
+$ java -Djava.rmi.server.hostname=127.0.0.1 MK1MLLeader &
 ```
 
 And after these steps, you can play with the GUI to get some ideas of how the platform works.
@@ -158,6 +158,6 @@ You can find the pseudo-code of a leader in the directory that you may want to f
 
 No fancy parameters for the compiling, just
 
-```
-javac YourLeader.java
+```shell
+$ javac YourLeader.java
 ```
